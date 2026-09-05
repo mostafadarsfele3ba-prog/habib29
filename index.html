@@ -43,9 +43,9 @@
         @keyframes moveRight { from { left: -150px; } to { left: 120%; } }
         @keyframes moveLeft { from { left: 100%; } to { left: -150px; } }
         
-        .anim-fall { animation: fallDown 25s linear forwards; }
-        .anim-right { animation: moveRight 20s linear forwards; }
-        .anim-left { animation: moveLeft 20s linear forwards; }
+        .anim-fall { animation: fallDown 40s linear forwards; }
+        .anim-right { animation: moveRight 35s linear forwards; }
+        .anim-left { animation: moveLeft 35s linear forwards; }
 
         @keyframes shake { 0%, 100% {transform: translateX(0);} 25% {transform: translateX(-5px);} 75% {transform: translateX(5px);} }
         .popup-anim { animation: popIn 0.3s ease-out forwards; }
@@ -1239,7 +1239,7 @@
             clearTimeout(animTimeout);
             animTimeout = setTimeout(() => {
                 if (gameState.currentScreen === 'bubbles') processAnimTimeout('bubbles', qData.ans);
-            }, 25000);
+            }, 40000);
         }
 
         // --- 3. Shoot Game (CSS Animation) ---
@@ -1271,7 +1271,7 @@
             clearTimeout(animTimeout);
             animTimeout = setTimeout(() => {
                 if (gameState.currentScreen === 'shoot') processAnimTimeout('shoot', qData.ans);
-            }, 20000);
+            }, 35000);
         }
 
         // Shared processing for Animated Games (Bubbles & Shoot)
